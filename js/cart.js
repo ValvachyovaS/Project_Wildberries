@@ -1,21 +1,11 @@
 const cart = function () {
-    console.log('Hello, world!');
+    const cartBtn = document.querySelector('.button-cart');
 
-    const cartBtn = document.querySelector('.button-cart'); //class
-
-    // cartBtn.onclick = function () { //only one function! don't use
-    //     console.log('click'); 
-    // }
-
-    cartBtn.addEventListener('click', function () { // many functions!
+    cartBtn.addEventListener('click', function () {
         console.log('open');
     });
 
-    console.dir(cartBtn); //dir show all info about obj
-
-
-    // const cartModal = document.querySelector('#modal-cart'); //or
-    const cartModal = document.getElementById('modal-cart'); // faster
+    const cartModal = document.getElementById('modal-cart');
 
     cartBtn.addEventListener('click', function () {
         cartModal.style.display = 'flex';
