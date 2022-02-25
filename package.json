@@ -1,0 +1,27 @@
+{
+  "name": "project_wildberries",
+  "version": "1.0.0",
+  "description": "Project with GLO Academy",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "author": "ValvachyovaS",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "swiper": "^8.0.6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValvachyovaS/Project_Wildberries.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ValvachyovaS/Project_Wildberries/issues"
+  },
+  "homepage": "https://github.com/ValvachyovaS/Project_Wildberries#readme"
+}
