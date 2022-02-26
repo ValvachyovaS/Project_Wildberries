@@ -28,8 +28,8 @@ export const getGoods = () => {
                     const array = valueSearch ? data.filter((good) => good.name.toLowerCase().includes(valueSearch.toLowerCase()))
                         : field ? data.filter((item) => item[field] === value) : data;
                     localStorage.setItem('data', JSON.stringify(array));
-                    if (window.location.pathname !== '/goods.html') {
-                        window.location.href = '/goods.html';
+                    if (window.location.pathname !== './goods.html') {
+                        window.location.href = './goods.html';
                     } else {
                         renderGoods(array);
                     }
@@ -57,7 +57,7 @@ export const getGoods = () => {
             viewAll.addEventListener('click', () => getData());
         }
 
-        if (localStorage.getItem('data') && window.location.pathname === '/goods.html') {
+        if (localStorage.getItem('data') && window.location.pathname === './goods.html') {
             renderGoods(JSON.parse(localStorage.getItem('data')));
         }
     } catch (e) {
