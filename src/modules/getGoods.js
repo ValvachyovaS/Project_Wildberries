@@ -22,7 +22,7 @@ export const getGoods = () => {
         };
 
         const getData = (value, field, valueSearch) => {
-            fetch('/db/db.json')
+            fetch('./db/db.json')
                 .then((res) => res.json())
                 .then((data) => {
                     const array = valueSearch ? data.filter((good) => good.name.toLowerCase().includes(valueSearch.toLowerCase()))
