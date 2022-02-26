@@ -29,10 +29,12 @@ export const getGoods = () => {
                         : field ? data.filter((item) => item[field] === value) : data;
                     localStorage.setItem('data', JSON.stringify(array));
                     const hrefPath = window.location.pathname.toString();
+                    console.log(hrefPath);
                     if (hrefPath.includes('/goods.html')) {
                         renderGoods(array);
                     } else {
                         let pathGo = hrefPath.replace('/index.html', '/goods.html'); //   /\\\w*\.html/g
+                        console.log(pathGo);
                         window.location.href = pathGo;
                     }
                 });
